@@ -19,7 +19,7 @@ let writer: TextWriter = new TextWriter('text-container');
 writer.write('Hello');
 
 // Use default configuration to output 'Hello' with each caracter wrapped in a span HTML tag, 
-with a 100ms sleep delay between each character.
+// with a 100ms sleep delay between each character.
 // <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span>
 ```
 
@@ -49,8 +49,8 @@ let writer: TextWriter = new TextWriter('text-container');
 writer.write('Hello', 2, 2000, true);
 
 // Will write 'Hello', with a 2* factor on the sleep delay (=200ms), 
-after a 2 seconds pause before the first character, and will replace 
-the previous content of the HTMLElement with the id 'text-container'.
+// after a 2 seconds pause before the first character, and will replace 
+// the previous content of the HTMLElement with the id 'text-container'.
 ```
 
 ```ts
@@ -60,7 +60,7 @@ writer.setAnimationDelay(200);
 writer.write(['Hello', 'World']);
 
 // Will write 'Hello' then 'World' in two different <p> elements in the id 'text-container', 
-with a 200ms pause between each character.
+// with a 200ms pause between each character.
 ```
 
 ```ts
@@ -68,5 +68,5 @@ let writer: TextWriter = new TextWriter('json-container');
 writer.writeJson("{'Hello': 'World'}", 0.5);
 
 // Will write {'Hello': 'World'}, with a 0.5 factor on the sleep delay (=50ms) in the HTMLElement 
-with the id 'text-container'.
+// with the id 'text-container'.
 ```
